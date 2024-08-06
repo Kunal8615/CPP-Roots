@@ -93,6 +93,10 @@ void partern6(int n){
     }
 }
 
+void partern(int n ){
+    
+}
+
 int main()
 {
 

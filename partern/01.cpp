@@ -28,6 +28,8 @@ void partern2(int n)
 
 void partern3(int n)
 {
+    cout << "partern";
+    cout << endl;
 
     for (int i = 1; i <= n; i++)
     {
@@ -41,7 +43,8 @@ void partern3(int n)
 
 void partern4(int n)
 {
-
+    cout << "partern";
+    cout << endl;
     for (int i = 1; i <= n; i++)
     {
         for (int j = 1; j <= i; j++)
@@ -54,6 +57,8 @@ void partern4(int n)
 
 void partern5(int n)
 {
+    cout << "partern";
+    cout << endl;
 
     for (int i = 1; i <= 2 * n - 1; i++)
     {
@@ -78,29 +83,132 @@ void partern5(int n)
     }
 }
 
-void partern6(int n){
+void partern6(int n)
+{
+    cout << "partern";
+    cout << endl;
 
-  for (int i = 1; i <= n; i++) {
+    for (int i = 1; i <= n; i++)
+    {
         // Print spaces
-        for (int j = i; j < n; j++) {
+        for (int j = i; j < n; j++)
+        {
             cout << " ";
         }
         // Print stars
-        for (int j = 1; j <= i; j++) {
+        for (int j = 1; j <= i; j++)
+        {
             cout << "*";
         }
         cout << endl;
     }
 }
 
-void partern(int n ){
+void partern7(int n)
+{
+    cout << "partern";
+    cout << endl;
+    // priyamid
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= 2 * n - 1; j++)
+        {
+            if (j >= n - (i - 1) && (j <= n + (i - 1)))
+            {
+                cout << "*";
+            }
+            else
+            {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+}
+
+void partern8(int n)
+{
+
+    for (int i = n - 1; i >= 1; i--)
+    {
+        // Print spaces
+        for (int j = n; j > i; j--)
+        {
+            cout << " ";
+        }
+        // Print stars
+        for (int j = 1; j <= (2 * i - 1); j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
+
+
+void partern9(int n)
+{
+    // Upper part of the diamond
+    for (int i = 1; i <= n; i++)
+    {
+        // Print spaces
+        for (int j = i; j < n; j++)
+        {
+            cout << " ";
+        }
+        // Print stars
+        for (int j = 1; j <= (2 * i - 1); j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    // Lower part of the diamond (using pattern8 function)
+    partern8(n);
+}
+
+void partern10(int n){
+for (int i = 1; i < n; i++)
+{
+    for (int j = i; j <=n; j++)
+    {
+        cout<<" ";
+    }
+    for (int j = 1; j <= (2*i-1); j++)
+    {
+        cout<<"*";
+    }
+    
+    cout<<endl;
     
 }
 
+ for (int i = n - 1; i >= 1; i--)
+    {
+        // Print spaces
+        for (int j = n; j > i; j--)
+        {
+            cout << " ";
+        }
+        // Print stars
+        for (int j = 1; j <= (2 * i - 1); j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+}
 int main()
 {
+ //   partern3(5);
+   // partern4(5);
+ //   partern5(5);
+  //  partern6(5);
+  //  partern7(5);
+   // partern8(5);
+    partern10(5);
 
-    // partern1(5);
-    partern6(5);
     return 0;
 }

@@ -78,12 +78,25 @@ void partern5(int n)
     }
 }
 
+void partern6(int n){
 
+  for (int i = 1; i <= n; i++) {
+        // Print spaces
+        for (int j = i; j < n; j++) {
+            cout << " ";
+        }
+        // Print stars
+        for (int j = 1; j <= i; j++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
 
 int main()
 {
 
     // partern1(5);
-    partern5(9);
+    partern6(5);
     return 0;
 }

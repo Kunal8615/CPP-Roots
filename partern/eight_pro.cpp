@@ -9,14 +9,12 @@ void printPattern(int n) {
         for (int j = 1; j <= n; j++) {
             if (j <= i || j > n - i) {
                 cout << "*"; // Print stars on left and right
-            } else if (i==1)
-            {
+            } 
+            else if (i==1){
                 cout<<"*";
+            }else {
+                cout << " "; // Print spaces in between
             }
-            else{
-                cout<<" ";
-            }
-            
         }
         cout << endl;
     }
@@ -27,11 +25,11 @@ void printPattern(int n) {
             if (j <= i || j > n - i) {
                 cout << "*"; // Print stars on left and right
             } 
-            else if (i==1)
-            {
+            
+            else if (i==1){
                 cout<<"*";
             }
-            
+          
             
             else {
                 cout << " "; // Print spaces in between

@@ -4,22 +4,22 @@ using namespace std;
 void printPattern(int n) {
     int middle = (n / 2) + 1;
 
-    // Top half including the middle row
+   
     for (int i = 1; i <= middle; i++) {
         for (int j = 1; j <= n; j++) {
             if (j <= i || j > n - i) {
-                cout << "*"; // Print stars on left and right
+                cout << "*";
             } 
             else if (i==1){
                 cout<<"*";
             }else {
-                cout << " "; // Print spaces in between
+                cout << " "; 
             }
         }
         cout << endl;
     }
 
-    // Bottom half
+ 
     for (int i = middle - 1; i >= 1; i--) {
         for (int j = 1; j <= n; j++) {
             if (j <= i || j > n - i) {

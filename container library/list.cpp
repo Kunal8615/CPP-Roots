@@ -8,8 +8,8 @@ int main(){
  lst.push_back(10);
  lst.push_back(11);
 
- for(int u :lst){
-    cout<<" "<<u<<endl;
+ for(int i :lst){
+    cout<<" "<<i<<endl;
  }
 
 }

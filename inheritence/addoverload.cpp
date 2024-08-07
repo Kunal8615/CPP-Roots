@@ -9,7 +9,7 @@ class de{
     de(int a){
         x= a;
     }
-    de operator+(const de &obj)const{
+    de operator+(const de &obj){
         return de(x + obj.x);
    
     }

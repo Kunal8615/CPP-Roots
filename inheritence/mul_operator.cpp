@@ -10,7 +10,7 @@ public:
         value = val;
     }
 
-    num operator*(const num &obj) const {
+    num operator*(const num &obj)  {
         return (value * obj.value);
     }
       void display() const {

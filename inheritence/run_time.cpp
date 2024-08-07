@@ -28,7 +28,7 @@ int main(){
     animal *demo;
     dog d;
     demo = &d;
-    d.sound();
+    demo->sound();
 
     
 

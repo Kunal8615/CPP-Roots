@@ -19,11 +19,13 @@ public:
         if (back == size - 1) {
             cout << "Queue is full" << endl;
            // return;
+           //
         }
         back = back + 1;
         arr[back] = value; // Value ko array mein store karna
         if (front == -1) {
             front = front + 1;
+
         }
     }
 

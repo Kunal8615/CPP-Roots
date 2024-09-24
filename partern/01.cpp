@@ -91,7 +91,7 @@ void partern6(int n)
     for (int i = 1; i <= n; i++)
     {
         // Print spaces
-        for (int j = i; j < n; j++)
+        for (int j = 1; j <= n-i; j++)
         {
             cout << " ";
         }
@@ -202,12 +202,19 @@ for (int i = 1; i < n; i++)
 }
 int main()
 {
- //   partern3(5);
-   // partern4(5);
- //   partern5(5);
-  //  partern6(5);
-  //  partern7(5);
-   // partern8(5);
+    partern3(5);
+    cout<<endl<<"___________________"<<endl;
+    
+    partern4(5);
+     cout<<endl<<"___________________"<<endl;
+    partern5(5);
+     cout<<endl<<"___________________"<<endl;
+    partern6(5);
+     cout<<endl<<"___________________"<<endl;
+    partern7(5);
+     cout<<endl<<"___________________"<<endl;
+    partern8(5);
+     cout<<endl<<"___________________"<<endl;
     partern10(5);
 
     return 0;

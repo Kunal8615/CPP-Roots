@@ -24,7 +24,8 @@ class c :public b{
 
 int main(){
  c obj1;
-//::print();
+
+obj1.print();
 obj1.a::print();
 
 }

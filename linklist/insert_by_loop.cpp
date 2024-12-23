@@ -12,7 +12,7 @@ struct node *head = NULL;
 struct node *insert(struct node *head, int number)
 {
     node *ptr = head;
-= t5 5
+
     for (int i = 1; i <= number; i++)
     {
         int element;

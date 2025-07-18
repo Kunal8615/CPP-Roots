@@ -46,12 +46,6 @@ int main()
     push(89);
     push(100);
     pop();
-      //   push(100);
-
-    //   push(82);
-    // pop();
-    // pop();
-    //   push(21);
 
     display(stack);
     return 0;

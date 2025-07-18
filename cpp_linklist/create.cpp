@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-struct node{
+struct snode{
     int data;
-    node * next;
+    snode * next;
 };
 class linklist{
 private:
-    node* head;
-    node * ptr;
+    snode* head;
+    snode * ptr;
 public:
     linklist(){
     head = nullptr;
@@ -16,7 +16,7 @@ public:
 }
 
 void insert(int value){
-    node * newnode = new node();
+    snode * newnode = new snode();
     newnode->data = value;
     newnode->next = nullptr;
   
@@ -32,10 +32,10 @@ void insert(int value){
     }
 
   void print() {
-        node* temp = head;
+        snode* temp = head;
         while (temp != nullptr) {
             cout << temp->data << " -> ";
-
+ 
             temp = temp->next;
         }
         cout << "nullptr" << endl;
@@ -43,16 +43,16 @@ void insert(int value){
 
 void deletenode(int value){
     if(head->data == value){
-        node *temp = head;
+        snode *temp = head;
         head= head->next;
         delete temp;
     }
     else{
-         node *temp = head;
+         snode *temp = head;
     while(temp->next!=nullptr && temp->next->data != value){
         temp=temp->next;
     }
-    node * deletenode = temp->next;
+    snode * deletenode = temp->next;
     temp->next = temp->next->next;
     delete deletenode;
     }

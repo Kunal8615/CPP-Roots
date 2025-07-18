@@ -1,46 +1,59 @@
-
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-struct  node {
+struct node {
     int data;
-    node * next;
- 
+    node* next;
 };
 
-class link_list{
-    private:
-    node * head,*tail;
+class link_list {
+private:
+    node* head; 
+    node* tail; 
 
- public:
- link_list(){
-    head= nullptr;
-    tail = nullptr;
- }
-   void add_node(int n)
-    {
-        node *tmp = new node;
+public:
+    // Constructor
+    link_list() {
+        head = nullptr;
+        tail = nullptr;
+    }
+    // Function to add a node
+    void add_node(int n) {
+        node* tmp = new node; // Create a new node
         tmp->data = n;
-        tmp->next = NULL;
+        tmp->next = nullptr;
 
-        if(head == NULL)
-        {
+        if (head == nullptr) { // If list is empty
             head = tmp;
             tail = tmp;
-        }
-        else
-        {
+        } else { // Add at the end
             tail->next = tmp;
-            tail = tail->next;
+            tail = tmp;
         }
     }
 
+    // Function to display the linked list
+    void display() {
+        node* current = head; // Start from the head
+        while (current != nullptr) { // Traverse till the end
+            cout << current->data << " ";
+            current = current->next;
+        }
+        cout << endl;
+    }
 };
 
-int main()
-{
+int main() {
     link_list a;
+
+    // Adding nodes
     a.add_node(1);
     a.add_node(2);
+    a.add_node(3);
+
+    // Displaying the linked list
+    cout << "Linked List: ";
+    a.display();
+
     return 0;
 }

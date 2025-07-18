@@ -44,6 +44,12 @@ public:
         }
         return arr[front];
     }
+    int display(){
+        for(int i = front ; i<= back ; i++){
+           cout<< arr[i]<< "->";
+        }
+       // return 0;
+    }
 
     bool empty() {
         if (front == -1 || front > back) {
@@ -61,12 +67,13 @@ int main() {
 
     cout << "Front element: " << a.peek() << endl;
 
-    a.deq();
+  //  a.deq();
     cout << "Front element after one dequeue: " << a.peek() << endl;
 
-    a.deq();
-    a.deq();
-    cout << "Queue empty: " << a.empty() << endl;
+  //  a.deq();
+  //  a.deq();
+  a.display();
+  //  cout << "Queue empty: " << a.empty() << endl;
 
     return 0;
 }

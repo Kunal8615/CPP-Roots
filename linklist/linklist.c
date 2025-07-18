@@ -10,15 +10,13 @@ struct node *head = NULL;
 
 void display(struct node *head)
 {
-
     while (head != NULL)
     {
         printf("%d->", head->data);
         head = head->next;
     }
-    printf("NULL");
+    printf("NULL"); 
 }
-
 struct node *create(struct node *head, int value)
 {
     node *new = (node *)malloc(sizeof(node));

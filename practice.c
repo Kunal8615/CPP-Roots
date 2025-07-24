@@ -1,5 +1,11 @@
 #include <stdio.h>
 
-int main() {
-  printf("%s","hello"[2]);
+void main(){
+
+int x = 30;
+char *p;
+p = &x;
+
+printf("%d",*p);
+
 }

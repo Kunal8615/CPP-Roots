@@ -33,7 +33,7 @@ void merge(int arr[], int left, int mid, int right) {
     while (j < n2)
         arr[k++] = R[j++];
 }
-
+   
 // Recursive Merge Sort function
 void mergeSort(int arr[], int left, int right) {
     if (left < right) {
@@ -47,7 +47,7 @@ void mergeSort(int arr[], int left, int right) {
         merge(arr, left, mid, right);
     }
 }
-
+ 
 // Function to print the array
 void printArray(int arr[], int size) {
     for (int i = 0; i < size; i++)

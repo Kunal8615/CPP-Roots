@@ -13,7 +13,7 @@ void swap(int *a ,int *b){
 void selection(int *arr,int length){
     for(int i = 0 ; i<length ;i++){
         int small = i;
-        for (int j = i+1; j < length; j++)
+        for (int j = i+1; j < length; j++) 
         {
             if(arr[small] > arr[j])
             small = j;

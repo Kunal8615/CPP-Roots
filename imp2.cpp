@@ -1,24 +1,17 @@
 #include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
 using namespace std;
 
-void pat(int n){
-    for (int i = 1; i <=n; i++)
-    {
-       for(int j = 1 ; j<=(n-i);j++){
-        cout<<" ";
-       }
-       for (int k = 1; k <=i ; k++)
-       {
-        cout<<"*";
-       }
+int main() {
+    // int a[] = {10, 12, 45};
 
-       cout<<endl;
-       
-    }
-    
-}
+    // cout << "Size of array a       : " << sizeof(a) << " bytes" << endl;
+    // cout << "Size of &a (address)  : " << sizeof(&a) << " bytes" << endl;
+    // cout << "Size of a[0] (int)    : " << sizeof(a[0]) << " bytes" << endl;
 
-int main(){
-
-pat(5);
+    // return 0;
+   const char *p = "PANKAJ";
+    printf("%s",p);
+    return 0;
 }

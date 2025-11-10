@@ -19,7 +19,7 @@ public:
     }
 };
 
-// Another derived class
+
 class Rectangle : public Shape {
 public:
     // Overriding the virtual function

@@ -4,10 +4,12 @@ using namespace std;
 class a {
 public:
 void print(){
+    
     cout<<"here is some";
 }
 };
 class b :public a{
+    public:
    void print(){
         cout<<"2nd function";
     }

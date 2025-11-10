@@ -14,7 +14,7 @@ private:
 
 public:
     MeraClass() {
-        x = 0; // Constructor me value assign ki
+        x = 45; // Constructor me value assign ki
     }
 
     // Friend function ko declare kiya

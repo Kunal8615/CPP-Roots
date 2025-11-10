@@ -7,13 +7,13 @@ int main() {
     map<int, string> myMap;
 
     // Insertion
-    myMap[1] = "Apple"; // Direct assignment
-    myMap.insert(pair<int, string>(2, "Banana")); // Using insert function
-    myMap.insert({3, "Cherry"}); // Another way using initializer list
+    myMap[1] = "Apple"; 
+    myMap.insert(pair<int, string>(2, "Banana")); 
+    myMap.insert({3, "Cherry"}); 
 
     // Accessing elements
     cout << "Element with key 1: " << myMap[1] << endl;
-    cout << "Element with key 2: " << myMap.at(2) << endl; // Using at() function
+    cout << "Element with key 2: " << myMap.at(2) << endl; 
 
     // Iterating through the map
     cout << "Map elements are:" << endl;

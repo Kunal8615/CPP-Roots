@@ -25,7 +25,7 @@ void merge(int arr[], int left, int mid, int right) {
         else
             arr[k++] = R[j++];
     }
-
+ 
     // Copy remaining elements
     while (i < n1)
         arr[k++] = L[i++];
